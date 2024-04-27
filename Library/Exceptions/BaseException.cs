@@ -18,3 +18,18 @@ public class ModelEntityNotFoundException : Exception
     {
     }
 }
+
+public class ModelEntityInactiveException : Exception
+{
+    public ModelEntityInactiveException() : base(message: "The entity is inactive.")
+    {
+    }
+
+    public ModelEntityInactiveException(string message) : base(message)
+    {
+    }
+
+    public ModelEntityInactiveException(string message, Exception inner) : base(message, inner)
+    {
+    }
+}
